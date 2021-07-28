@@ -1,0 +1,1 @@
+m <= (NOT (s) AND x) OR (s AND y);
