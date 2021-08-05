@@ -39,16 +39,32 @@ BEGIN
    --       3  
    --
 	
-   HEX0(0) <= (NOT(C(1)) AND NOT(C(0))) OR (C(1) AND NOT(C(0)));	-- A
+	-- Sum of Products (SOP) Solution
+-- HEX0(0) <= (NOT(C(1)) AND NOT(C(0))) OR (C(1) AND NOT(C(0)));	-- A
+--	
+--	HEX0(1) <= (NOT(C(1)) AND C(0));											-- B
+--	HEX0(2) <= (NOT(C(1)) AND C(0));											-- B
+--	
+--	HEX0(3) <= ((C(1)) AND NOT(C(0)));										-- C
+--	HEX0(4) <= ((C(1)) AND NOT(C(0)));										-- C
+--	
+--	HEX0(5) <= (NOT(C(1)) AND NOT(C(0))) OR (C(1) AND NOT(C(0)));	-- A
+--	
+--	HEX0(6) <= (C(1) AND NOT(C(0))) OR (C(1) AND C(0));				-- D
 	
-	HEX0(1) <= (NOT(C(1)) AND C(0));											-- B
-	HEX0(2) <= (NOT(C(1)) AND C(0));											-- B
 	
-	HEX0(3) <= ((C(1)) AND NOT(C(0)));										-- C
-	HEX0(4) <= ((C(1)) AND NOT(C(0)));										-- C
+	-- Product of Sums (POS) Solution
+	HEX0(0) <= (C(1) OR NOT(C(0))) AND (NOT(C(1)) OR NOT(C(0)));							--A
 	
-	HEX0(5) <= (NOT(C(1)) AND NOT(C(0))) OR (C(1) AND NOT(C(0)));	-- A
+	HEX0(1) <= (C(1) OR C(0)) AND (NOT(C(1)) OR C(0)) AND (NOT(C(1)) OR NOT(C(0)));	--B
+	HEX0(2) <= (C(1) OR C(0)) AND (NOT(C(1)) OR C(0)) AND (NOT(C(1)) OR NOT(C(0)));	--B
+
+	HEX0(3) <= (C(1) OR C(0)) AND (C(1) OR NOT(C(0))) AND (NOT(C(1)) OR NOT(C(0)));	--C
+	HEX0(4) <= (C(1) OR C(0)) AND (C(1) OR NOT(C(0))) AND (NOT(C(1)) OR NOT(C(0)));	--C
 	
-	HEX0(6) <= (C(1) AND NOT(C(0))) OR (C(1) AND C(0));				-- D
+	HEX0(5) <= (C(1) OR NOT(C(0))) AND (NOT(C(1)) OR NOT(C(0)));							--A
+	
+	HEX0(6) <= (C(1) OR C(0)) AND (C(1) OR NOT(C(0)));											--D
+	
 
 END Structure;
