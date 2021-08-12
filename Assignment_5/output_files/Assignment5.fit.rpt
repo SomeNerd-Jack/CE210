@@ -1,5 +1,5 @@
 Fitter report for Assignment5
-Sat Aug 07 11:26:50 2021
+Wed Aug 11 14:37:24 2021
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -64,7 +64,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sat Aug 07 11:26:50 2021       ;
+; Fitter Status                      ; Successful - Wed Aug 11 14:37:24 2021       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; Assignment5                                 ;
 ; Top-level Entity Name              ; Assignment5                                 ;
@@ -147,15 +147,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 8           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
-; Maximum used               ; 8           ;
+; Average used               ; 1.01        ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.3%      ;
+;     Processor 2            ;   0.6%      ;
 +----------------------------+-------------+
 
 
@@ -391,8 +391,8 @@ The pin-out file can be found in C:/Users/somenerd/Documents/GitHub/CE210/Assign
 ; Remote update blocks                        ; 0 / 1 ( 0 % )         ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )         ;
 ; Impedance control blocks                    ; 0 / 1 ( 0 % )         ;
-; Average interconnect usage (total/H/V)      ; 0.1% / 0.0% / 0.1%    ;
-; Peak interconnect usage (total/H/V)         ; 0.6% / 0.7% / 0.5%    ;
+; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.1%    ;
+; Peak interconnect usage (total/H/V)         ; 0.6% / 0.7% / 0.6%    ;
 ; Maximum fan-out                             ; 17                    ;
 ; Highest non-global fan-out                  ; 17                    ;
 ; Total fan-out                               ; 113                   ;
@@ -1195,47 +1195,47 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout             ; Pad To Core Index ; Setting ;
 +---------------------------------+-------------------+---------+
 ; SW[0]                           ;                   ;         ;
-;      - char_7seg1:H0|Display[4] ; 0                 ; 6       ;
-;      - char_7seg1:H0|Display[2] ; 0                 ; 6       ;
+;      - char_7seg1:H0|Display[3] ; 0                 ; 6       ;
+;      - char_7seg1:H0|Display[1] ; 0                 ; 6       ;
 ;      - LEDR[0]~output           ; 0                 ; 6       ;
 ;      - HEX0[0]~output           ; 0                 ; 6       ;
 ;      - HEX0[5]~output           ; 0                 ; 6       ;
 ; SW[1]                           ;                   ;         ;
-;      - char_7seg1:H0|Display[4] ; 0                 ; 6       ;
-;      - char_7seg1:H0|Display[2] ; 0                 ; 6       ;
+;      - char_7seg1:H0|Display[3] ; 0                 ; 6       ;
+;      - char_7seg1:H0|Display[1] ; 0                 ; 6       ;
 ;      - LEDR[1]~output           ; 0                 ; 6       ;
 ;      - HEX0[6]~output           ; 0                 ; 6       ;
 ; SW[2]                           ;                   ;         ;
-;      - char_7seg1:H1|Display[4] ; 0                 ; 6       ;
-;      - char_7seg1:H1|Display[2] ; 0                 ; 6       ;
+;      - char_7seg1:H1|Display[3] ; 0                 ; 6       ;
+;      - char_7seg1:H1|Display[1] ; 0                 ; 6       ;
 ;      - LEDR[2]~output           ; 0                 ; 6       ;
 ;      - HEX1[0]~output           ; 0                 ; 6       ;
 ;      - HEX1[5]~output           ; 0                 ; 6       ;
 ; SW[3]                           ;                   ;         ;
-;      - char_7seg1:H1|Display[4] ; 1                 ; 6       ;
-;      - char_7seg1:H1|Display[2] ; 1                 ; 6       ;
+;      - char_7seg1:H1|Display[3] ; 1                 ; 6       ;
+;      - char_7seg1:H1|Display[1] ; 1                 ; 6       ;
 ;      - LEDR[3]~output           ; 1                 ; 6       ;
 ;      - HEX1[6]~output           ; 1                 ; 6       ;
 ; SW[4]                           ;                   ;         ;
-;      - char_7seg1:H2|Display[4] ; 0                 ; 6       ;
-;      - char_7seg1:H2|Display[2] ; 0                 ; 6       ;
+;      - char_7seg1:H2|Display[3] ; 0                 ; 6       ;
+;      - char_7seg1:H2|Display[1] ; 0                 ; 6       ;
 ;      - LEDR[4]~output           ; 0                 ; 6       ;
 ;      - HEX2[0]~output           ; 0                 ; 6       ;
 ;      - HEX2[5]~output           ; 0                 ; 6       ;
 ; SW[5]                           ;                   ;         ;
-;      - char_7seg1:H2|Display[4] ; 0                 ; 6       ;
-;      - char_7seg1:H2|Display[2] ; 0                 ; 6       ;
+;      - char_7seg1:H2|Display[3] ; 0                 ; 6       ;
+;      - char_7seg1:H2|Display[1] ; 0                 ; 6       ;
 ;      - LEDR[5]~output           ; 0                 ; 6       ;
 ;      - HEX2[6]~output           ; 0                 ; 6       ;
 ; SW[6]                           ;                   ;         ;
-;      - char_7seg1:H3|Display[4] ; 1                 ; 6       ;
-;      - char_7seg1:H3|Display[2] ; 1                 ; 6       ;
+;      - char_7seg1:H3|Display[3] ; 1                 ; 6       ;
+;      - char_7seg1:H3|Display[1] ; 1                 ; 6       ;
 ;      - LEDR[6]~output           ; 1                 ; 6       ;
 ;      - HEX3[0]~output           ; 1                 ; 6       ;
 ;      - HEX3[5]~output           ; 1                 ; 6       ;
 ; SW[7]                           ;                   ;         ;
-;      - char_7seg1:H3|Display[4] ; 1                 ; 6       ;
-;      - char_7seg1:H3|Display[2] ; 1                 ; 6       ;
+;      - char_7seg1:H3|Display[3] ; 1                 ; 6       ;
+;      - char_7seg1:H3|Display[1] ; 1                 ; 6       ;
 ;      - LEDR[7]~output           ; 1                 ; 6       ;
 ;      - HEX3[6]~output           ; 1                 ; 6       ;
 ; SW[8]                           ;                   ;         ;
@@ -1251,14 +1251,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
 ; Block interconnects   ; 48 / 148,641 ( < 1 % ) ;
-; C16 interconnects     ; 12 / 5,382 ( < 1 % )   ;
+; C16 interconnects     ; 11 / 5,382 ( < 1 % )   ;
 ; C4 interconnects      ; 51 / 106,704 ( < 1 % ) ;
 ; Direct links          ; 1 / 148,641 ( < 1 % )  ;
 ; Global clocks         ; 0 / 20 ( 0 % )         ;
 ; Local interconnects   ; 0 / 49,760 ( 0 % )     ;
 ; NSLEEPs               ; 0 / 500 ( 0 % )        ;
-; R24 interconnects     ; 9 / 5,406 ( < 1 % )    ;
-; R4 interconnects      ; 32 / 147,764 ( < 1 % ) ;
+; R24 interconnects     ; 11 / 5,406 ( < 1 % )   ;
+; R4 interconnects      ; 31 / 147,764 ( < 1 % ) ;
 +-----------------------+------------------------+
 
 
@@ -1472,7 +1472,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Fitter Messages ;
 +-----------------+
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (119006): Selected device 10M50DAF484C7G for design "Assignment5"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -1656,7 +1656,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[2]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_R[3]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1670,7 +1670,7 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.05 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.04 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1679,10 +1679,10 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/somenerd/Documents/GitHub/CE210/Assignment_5/output_files/Assignment5.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 146 warnings
-    Info: Peak virtual memory: 5906 megabytes
-    Info: Processing ended: Sat Aug 07 11:26:50 2021
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Peak virtual memory: 5373 megabytes
+    Info: Processing ended: Wed Aug 11 14:37:25 2021
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:14
 
 
 +----------------------------+

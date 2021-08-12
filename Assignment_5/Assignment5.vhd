@@ -40,10 +40,6 @@ ARCHITECTURE Structure OF Assignment5 IS
 	H1: char_7seg1 PORT MAP (Ch2, HEX1);
 	H2: char_7seg1 PORT MAP (Ch3, HEX2);
 	H3: char_7seg1 PORT MAP (Ch4, HEX3);
-
-
---Code is not shown -------------------------------
-	
 	
 	
 END Structure;
@@ -62,34 +58,17 @@ END char_7seg1;
 ARCHITECTURE Behavior OF char_7seg1 IS
 BEGIN
 
-
-	-- Sum of Products (SOP) Solution
--- Display(0) <= (NOT(C(1)) AND NOT(C(0))) OR (C(1) AND NOT(C(0)));	-- A
---	
---	Display(1) <= (NOT(C(1)) AND C(0));											-- B
---	Display(2) <= (NOT(C(1)) AND C(0));											-- B
---	
---	Display(3) <= ((C(1)) AND NOT(C(0)));										-- C
---	Display(4) <= ((C(1)) AND NOT(C(0)));										-- C
---	
---	Display(5) <= (NOT(C(1)) AND NOT(C(0))) OR (C(1) AND NOT(C(0)));	-- A
---	
---	Display(6) <= (C(1) AND NOT(C(0))) OR (C(1) AND C(0));				-- D
+	Display(0) <= (NOT(C(0)));					-- A
 	
+	Display(1) <= (NOT(C(1)) AND C(0));		-- B
+	Display(2) <= (NOT(C(1)) AND C(0));		-- B
 	
-	-- Product of Sums (POS) Solution
-	Display(0) <= (C(1) OR NOT(C(0))) AND (NOT(C(1)) OR NOT(C(0)));							--A
+	Display(3) <= (C(1)) AND NOT(C(0));		-- C
+	Display(4) <= (C(1)) AND NOT(C(0));		-- C
 	
-	Display(1) <= (C(1) OR C(0)) AND (NOT(C(1)) OR C(0)) AND (NOT(C(1)) OR NOT(C(0)));	--B
-	Display(2) <= (C(1) OR C(0)) AND (NOT(C(1)) OR C(0)) AND (NOT(C(1)) OR NOT(C(0)));	--B
-
-	Display(3) <= (C(1) OR C(0)) AND (C(1) OR NOT(C(0))) AND (NOT(C(1)) OR NOT(C(0)));	--C
-	Display(4) <= (C(1) OR C(0)) AND (C(1) OR NOT(C(0))) AND (NOT(C(1)) OR NOT(C(0)));	--C
+	Display(5) <= (NOT(C(0)));					-- A
 	
-	Display(5) <= (C(1) OR NOT(C(0))) AND (NOT(C(1)) OR NOT(C(0)));							--A
+	Display(6) <= (C(1));						-- D
 	
-	Display(6) <= (C(1) OR C(0)) AND (C(1) OR NOT(C(0)));											--D
-
--- Code is not shown -------------------------------
         
 END Behavior;
