@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Assignment6
-Mon Aug 23 15:04:15 2021
+Wed Aug 25 09:46:50 2021
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Aug 23 15:04:15 2021       ;
+; Analysis & Synthesis Status        ; Successful - Wed Aug 25 09:46:50 2021       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; Assignment6                                 ;
 ; Top-level Entity Name              ; Assignment6                                 ;
@@ -153,8 +153,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -259,10 +259,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Mon Aug 23 15:03:54 2021
+    Info: Processing started: Wed Aug 25 09:46:40 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Assignment6 -c Assignment6
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 4 design units, including 2 entities, in source file assignment6.vhd
     Info (12022): Found design unit 1: Assignment6-Structure File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 11
     Info (12022): Found design unit 2: fa-Structure File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 35
@@ -349,9 +349,9 @@ Info (21057): Implemented 19 device resources after synthesis - the final resour
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 10 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 75 warnings
-    Info: Peak virtual memory: 4792 megabytes
-    Info: Processing ended: Mon Aug 23 15:04:16 2021
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:40
+    Info: Peak virtual memory: 4782 megabytes
+    Info: Processing ended: Wed Aug 25 09:46:50 2021
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:23
 
 

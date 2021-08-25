@@ -1,5 +1,5 @@
 Flow report for Assignment6
-Mon Aug 23 15:04:45 2021
+Wed Aug 25 09:47:08 2021
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Aug 23 15:04:38 2021       ;
+; Flow Status                        ; Successful - Wed Aug 25 09:47:04 2021       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; Assignment6                                 ;
 ; Top-level Entity Name              ; Assignment6                                 ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/23/2021 15:03:55 ;
+; Start date & time ; 08/25/2021 09:46:40 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Assignment6         ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 264018877196514.162974543513916        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 5311875805084.162989920012788          ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -99,11 +99,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:21     ; 1.0                     ; 4792 MB             ; 00:00:39                           ;
-; Fitter               ; 00:00:14     ; 1.0                     ; 5372 MB             ; 00:00:16                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 4689 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:06     ; 1.0                     ; 4797 MB             ; 00:00:05                           ;
-; Total                ; 00:00:45     ; --                      ; --                  ; 00:01:04                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4782 MB             ; 00:00:23                           ;
+; Fitter               ; 00:00:08     ; 1.0                     ; 5892 MB             ; 00:00:11                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4686 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4867 MB             ; 00:00:02                           ;
+; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:39                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -112,10 +112,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-41TP32S  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-41TP32S  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-41TP32S  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-41TP32S  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-VOBNU93  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-VOBNU93  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-VOBNU93  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-VOBNU93  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

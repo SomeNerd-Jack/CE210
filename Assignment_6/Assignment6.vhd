@@ -18,8 +18,8 @@ ARCHITECTURE Structure OF Assignment6 IS
 BEGIN
    A <= SW(7 DOWNTO 4);
    B <= SW(3 DOWNTO 0);
-   
---Code is not shown-------------------------------
+
+--CODE NOT SHOWN -------------------------------------
 
 END Structure;
          
@@ -36,6 +36,7 @@ ARCHITECTURE Structure OF fa IS
    SIGNAL a_xor_b : STD_LOGIC;
 BEGIN
    
---Code is not shown-----------------------
+	S <= (A XOR B) XOR CI;
+	CO <= ((NOT (A XOR B)) AND A) OR ((A XOR B) AND B); --https://i.ytimg.com/vi/K9UlJrSFWD8/maxresdefault.jpg
 
 END Structure;
