@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Assignment6
-Wed Aug 25 09:46:50 2021
+Wed Aug 25 14:05:00 2021
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -43,13 +43,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Aug 25 09:46:50 2021       ;
+; Analysis & Synthesis Status        ; Successful - Wed Aug 25 14:05:00 2021       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; Assignment6                                 ;
 ; Top-level Entity Name              ; Assignment6                                 ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
+; Total logic elements               ; 9                                           ;
+;     Total combinational functions  ; 9                                           ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 19                                          ;
@@ -153,8 +153,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 8           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -173,35 +173,36 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 19    ;
-;                                             ;       ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; SW[0] ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 19    ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 9          ;
+;                                             ;            ;
+; Total combinational functions               ; 9          ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 1          ;
+;     -- 3 input functions                    ; 7          ;
+;     -- <=2 input functions                  ; 1          ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 9          ;
+;     -- arithmetic mode                      ; 0          ;
+;                                             ;            ;
+; Total registers                             ; 0          ;
+;     -- Dedicated logic registers            ; 0          ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 19         ;
+;                                             ;            ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; fa:A0|co~0 ;
+; Maximum fan-out                             ; 3          ;
+; Total fan-out                               ; 51         ;
+; Average fan-out                             ; 1.09       ;
++---------------------------------------------+------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -209,7 +210,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |Assignment6               ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 19   ; 0            ; 0          ; |Assignment6        ; Assignment6 ; work         ;
+; |Assignment6               ; 9 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 19   ; 0            ; 0          ; |Assignment6        ; Assignment6 ; work         ;
+;    |fa:A0|                 ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Assignment6|fa:A0  ; fa          ; work         ;
+;    |fa:A1|                 ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Assignment6|fa:A1  ; fa          ; work         ;
+;    |fa:A2|                 ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Assignment6|fa:A2  ; fa          ; work         ;
+;    |fa:A3|                 ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Assignment6|fa:A3  ; fa          ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -235,12 +240,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 19                          ;
-; cycloneiii_lcell_comb ; 1                           ;
-;     normal            ; 1                           ;
+; cycloneiii_lcell_comb ; 10                          ;
+;     normal            ; 10                          ;
 ;         0 data inputs ; 1                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 7                           ;
+;         4 data inputs ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.68                        ;
 +-----------------------+-----------------------------+
 
 
@@ -259,30 +267,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Wed Aug 25 09:46:40 2021
+    Info: Processing started: Wed Aug 25 14:04:43 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Assignment6 -c Assignment6
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 4 design units, including 2 entities, in source file assignment6.vhd
     Info (12022): Found design unit 1: Assignment6-Structure File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 11
-    Info (12022): Found design unit 2: fa-Structure File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 35
+    Info (12022): Found design unit 2: fa-Structure File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 43
     Info (12023): Found entity 1: Assignment6 File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 6
-    Info (12023): Found entity 2: fa File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 30
+    Info (12023): Found entity 2: fa File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 38
 Info (12127): Elaborating entity "Assignment6" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at Assignment6.vhd(8): used implicit default value for signal "LEDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 8
-Warning (10036): Verilog HDL or VHDL warning at Assignment6.vhd(16): object "A" assigned a value but never read File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 16
-Warning (10036): Verilog HDL or VHDL warning at Assignment6.vhd(16): object "B" assigned a value but never read File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 16
+Warning (10873): Using initial value X (don't care) for net "LEDR[9..5]" at Assignment6.vhd(8) File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 8
+Info (12128): Elaborating entity "fa" for hierarchy "fa:A0" File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 24
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 8
-    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 8
-    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 8
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 8
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 8
     Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 8
     Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 8
     Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 8
     Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 8
     Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 8
+Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 24 assignments for entity "DE10_Lite" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity DE10_Lite -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity DE10_Lite -section_id Top was ignored
@@ -335,23 +338,14 @@ Warning (20013): Ignored 24 assignments for entity "multiplexer" -- entity does 
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity multiplexer -section_id Top was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 9 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 7
-    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_6/Assignment6.vhd Line: 7
-Info (21057): Implemented 19 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 28 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 10 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 75 warnings
+    Info (21061): Implemented 9 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 58 warnings
     Info: Peak virtual memory: 4782 megabytes
-    Info: Processing ended: Wed Aug 25 09:46:50 2021
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Processing ended: Wed Aug 25 14:05:00 2021
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:37
 
 

@@ -1,22 +1,70 @@
 |Assignment6
-SW[0] => ~NO_FANOUT~
-SW[1] => ~NO_FANOUT~
-SW[2] => ~NO_FANOUT~
-SW[3] => ~NO_FANOUT~
-SW[4] => ~NO_FANOUT~
-SW[5] => ~NO_FANOUT~
-SW[6] => ~NO_FANOUT~
-SW[7] => ~NO_FANOUT~
-SW[8] => ~NO_FANOUT~
-LEDR[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[1] <= LEDR[1].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[2] <= LEDR[2].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[3] <= LEDR[3].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[4] <= LEDR[4].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[5] <= LEDR[5].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[6] <= LEDR[6].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[7] <= LEDR[7].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[8] <= LEDR[8].DB_MAX_OUTPUT_PORT_TYPE
-LEDR[9] <= LEDR[9].DB_MAX_OUTPUT_PORT_TYPE
+SW[0] => fa:A0.b
+SW[1] => fa:A1.b
+SW[2] => fa:A2.b
+SW[3] => fa:A3.b
+SW[4] => fa:A0.a
+SW[5] => fa:A1.a
+SW[6] => fa:A2.a
+SW[7] => fa:A3.a
+SW[8] => fa:A0.ci
+LEDR[0] <= fa:A0.s
+LEDR[1] <= fa:A1.s
+LEDR[2] <= fa:A2.s
+LEDR[3] <= fa:A3.s
+LEDR[4] <= fa:A3.co
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
+
+
+|Assignment6|fa:A0
+a => s.IN0
+a => co.IN0
+b => s.IN1
+b => co.IN1
+b => co.DATAB
+ci => s.IN1
+ci => co.DATAA
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Assignment6|fa:A1
+a => s.IN0
+a => co.IN0
+b => s.IN1
+b => co.IN1
+b => co.DATAB
+ci => s.IN1
+ci => co.DATAA
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Assignment6|fa:A2
+a => s.IN0
+a => co.IN0
+b => s.IN1
+b => co.IN1
+b => co.DATAB
+ci => s.IN1
+ci => co.DATAA
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Assignment6|fa:A3
+a => s.IN0
+a => co.IN0
+b => s.IN1
+b => co.IN1
+b => co.DATAB
+ci => s.IN1
+ci => co.DATAA
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
 
 

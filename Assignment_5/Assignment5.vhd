@@ -29,7 +29,7 @@ ARCHITECTURE Structure OF Assignment5 IS
 	BEGIN
 
 	LEDR <= SW;
-   Ch1 <= SW(1 DOWNTO 0);
+	Ch1 <= SW(1 DOWNTO 0);
 	Ch2 <= SW(3 DOWNTO 2);
 	Ch3 <= SW(5 DOWNTO 4);
 	Ch4 <= SW(7 DOWNTO 6);
