@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Wed Sep 01 11:33:36 2021
+Analysis & Synthesis Status : Successful - Wed Sep 01 13:24:49 2021
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 Revision Name : Assignment7
 Top-level Entity Name : Assignment7
 Family : MAX 10
-Total logic elements : 7
-    Total combinational functions : 7
+Total logic elements : 32
+    Total combinational functions : 32
     Dedicated logic registers : 0
 Total registers : 0
 Total pins : 51
