@@ -38,17 +38,18 @@ BEGIN
    T0 <= ('0' & A) + ('0' & B) + Cin;
    PROCESS (T0)
    BEGIN
-     IF(T0 >9) THEN
-	  Z0 <= 10;
-	  C1 <= 1;
-	  ELSE
-	  Z0 <= 0;
-	  C1 <= 0;
+		IF(T0 > 9) THEN
+			Z0 <= "00010";
+			C1 <= '1';
+		ELSE
+			Z0 <= "00000";
+			C1 <= '0';
 	  
-END IF;
+		END IF;
 
-S0 <= T0 - Z0;
-S1 <= C1;
+		S0 <= T0 - Z0;
+		S1 <= C1;
+	END PROCESS;
 
 --Code is not shown -----------------------------------------
    
@@ -84,12 +85,18 @@ BEGIN
    --
    PROCESS (bcd)
    BEGIN
-      CASE bcd IS
-         WHEN "0000" => display <= "0000001";
-         
---Code is not shown -----------------------------------------
-
-
-      END CASE;
+	CASE bcd IS 					-- 0123456
+		WHEN "0000" => display <= "1111110" ;
+		WHEN "0001" => display <= "0110000" ;
+		WHEN "0010" => display <= "1101101" ;
+		WHEN "0011" => display <= "1111001" ;
+		WHEN "0100" => display <= "0110011" ;
+		WHEN "0101" => display <= "1011011" ;
+		WHEN "0110" => display <= "1011111" ;
+		WHEN "0111" => display <= "1110000" ;
+		WHEN "1000" => display <= "1111111" ;
+		WHEN "1001" => display <= "1110011" ;
+		WHEN OTHERS => display <= "-------" ;
+	END CASE ;
    END PROCESS;
 END Behavior;
