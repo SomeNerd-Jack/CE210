@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Assignment7
-Wed Sep 01 13:24:49 2021
+Thu Sep 02 08:00:38 2021
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -16,9 +16,10 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
   8. General Register Statistics
   9. Port Connectivity Checks: "bcd7seg:turnOffDisplay2"
  10. Port Connectivity Checks: "bcd7seg:turnOffDisplay1"
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+ 11. Port Connectivity Checks: "bcd7seg:displayS1"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -45,7 +46,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Sep 01 13:24:49 2021       ;
+; Analysis & Synthesis Status        ; Successful - Thu Sep 02 08:00:38 2021       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; Assignment7                                 ;
 ; Top-level Entity Name              ; Assignment7                                 ;
@@ -253,6 +254,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+-------+----------+---------------------------+
 
 
++-----------------------------------------------+
+; Port Connectivity Checks: "bcd7seg:displayS1" ;
++-----------+-------+----------+----------------+
+; Port      ; Type  ; Severity ; Details        ;
++-----------+-------+----------+----------------+
+; bcd[3..1] ; Input ; Info     ; Stuck at GND   ;
++-----------+-------+----------+----------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
@@ -279,7 +289,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -289,19 +299,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Wed Sep 01 13:24:30 2021
+    Info: Processing started: Thu Sep 02 08:00:17 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Assignment7 -c Assignment7
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 4 design units, including 2 entities, in source file assignment7.vhd
     Info (12022): Found design unit 1: Assignment7-Behavior File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_7/Assignment7.vhd Line: 18
-    Info (12022): Found design unit 2: bcd7seg-Behavior File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_7/Assignment7.vhd Line: 86
+    Info (12022): Found design unit 2: bcd7seg-Behavior File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_7/Assignment7.vhd Line: 76
     Info (12023): Found entity 1: Assignment7 File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_7/Assignment7.vhd Line: 13
-    Info (12023): Found entity 2: bcd7seg File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_7/Assignment7.vhd Line: 81
+    Info (12023): Found entity 2: bcd7seg File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_7/Assignment7.vhd Line: 71
 Info (12127): Elaborating entity "Assignment7" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at Assignment7.vhd(51): signal "Z0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_7/Assignment7.vhd Line: 51
-Warning (10492): VHDL Process Statement warning at Assignment7.vhd(52): signal "C1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_7/Assignment7.vhd Line: 52
-Info (12128): Elaborating entity "bcd7seg" for hierarchy "bcd7seg:displayA" File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_7/Assignment7.vhd Line: 56
+Warning (10492): VHDL Process Statement warning at Assignment7.vhd(50): signal "Z0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_7/Assignment7.vhd Line: 50
+Warning (10492): VHDL Process Statement warning at Assignment7.vhd(51): signal "C1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_7/Assignment7.vhd Line: 51
+Info (12128): Elaborating entity "bcd7seg" for hierarchy "bcd7seg:displayA" File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_7/Assignment7.vhd Line: 55
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX4[6]" is stuck at VCC File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_7/Assignment7.vhd Line: 15
     Warning (13410): Pin "HEX4[5]" is stuck at VCC File: C:/Users/somenerd/Documents/GitHub/CE210/Assignment_7/Assignment7.vhd Line: 15
@@ -404,8 +414,8 @@ Info (21057): Implemented 83 device resources after synthesis - the final resour
     Info (21061): Implemented 32 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 96 warnings
     Info: Peak virtual memory: 4784 megabytes
-    Info: Processing ended: Wed Sep 01 13:24:49 2021
-    Info: Elapsed time: 00:00:19
+    Info: Processing ended: Thu Sep 02 08:00:38 2021
+    Info: Elapsed time: 00:00:21
     Info: Total CPU time (on all processors): 00:00:39
 
 
