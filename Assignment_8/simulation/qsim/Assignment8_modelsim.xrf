@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/Assignment8.vhd
+source_file = 1, C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/Waveform.vwf
+source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/db/Assignment8.cbx.xml
+design_name = hard_block
+design_name = Assignment8
+instance = comp, \f~output\, f~output, Assignment8, 1
+instance = comp, \x3~input\, x3~input, Assignment8, 1
+instance = comp, \x2~input\, x2~input, Assignment8, 1
+instance = comp, \x1~input\, x1~input, Assignment8, 1
+instance = comp, \f~0\, f~0, Assignment8, 1
