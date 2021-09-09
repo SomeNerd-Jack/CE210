@@ -1,0 +1,23 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+ENTITY Assignment9 IS
+	PORT (D, CLK : IN	STD_LOGIC;
+	Qa, Qb, Qc : OUT STD_LOGIC);
+ END Assignment9;
+ARCHITECTURE Behavior OF Assignment9 IS
+BEGIN
+PROCESS (D, CLK)
+BEGIN
+IF CLK = ’1’ THEN
+	Qa <= D;
+END IF;
+
+IF CLK EVENT AND CLK = '1' THEN
+	Qb <= D;
+END IF;
+
+IF CLK EVENT AND CLK = '0' THEN
+	Qc <= D;
+END IF;
+END PROCESS;
+END Behavior;

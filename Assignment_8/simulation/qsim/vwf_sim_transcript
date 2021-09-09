@@ -26,7 +26,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Sep 08 13:32:35 2021
+    Info: Processing started: Wed Sep 08 14:35:52 2021
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Assignment8 -c Assignment8 --vector_source=C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/Waveform.vwf --testbench_file=C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/simulation/qsim/Waveform.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -53,7 +53,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Sep 08 13:32:37 2021
+    Info: Processing started: Wed Sep 08 14:35:53 2021
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/simulation/qsim/ Assignment8 -c Assignment8
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file Assignment8_7_1200mv_85c_slow.vho in folder "C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/simulation/qsim//" for EDA simulation tool
@@ -65,8 +65,8 @@ Info (204019): Generated file Assignment8_7_1200mv_0c_vhd_slow.sdo in folder "C:
 Info (204019): Generated file Assignment8_min_1200mv_0c_vhd_fast.sdo in folder "C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/simulation/qsim//" for EDA simulation tool
 Info (204019): Generated file Assignment8_vhd.sdo in folder "C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4650 megabytes
-    Info: Processing ended: Wed Sep 08 13:32:38 2021
+    Info: Peak virtual memory: 4649 megabytes
+    Info: Processing ended: Wed Sep 08 14:35:54 2021
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -86,13 +86,13 @@ Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # 10.5b
 
-
 # do Assignment8.do
-# ** Warning: (vlib-34) Library already exists at "work".
 
+# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:32:39 on Sep 08,2021
+# Start time: 14:35:56 on Sep 08,2021
 # vcom -work work Assignment8.vho 
+
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -104,23 +104,22 @@ Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Compiling architecture structure of hard_block
 # -- Compiling entity Assignment8
 # -- Compiling architecture structure of Assignment8
-# End time: 13:32:39 on Sep 08,2021, Elapsed time: 0:00:00
+# End time: 14:35:56 on Sep 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:32:39 on Sep 08,2021
+
+# Start time: 14:35:56 on Sep 08,2021
 # vcom -work work Waveform.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Assignment8_vhd_vec_tst
 # -- Compiling architecture Assignment8_arch of Assignment8_vhd_vec_tst
-
-# End time: 13:32:39 on Sep 08,2021, Elapsed time: 0:00:00
+# End time: 14:35:56 on Sep 08,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -sdfmax Assignment8_vhd_vec_tst/i1=Assignment8_vhd.sdo -L fiftyfivenm -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Assignment8_vhd_vec_tst 
-# Start time: 13:32:39 on Sep 08,2021
+# Start time: 14:35:56 on Sep 08,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -143,7 +142,7 @@ Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 #    Time: 0 ps  Iteration: 0  Instance: /assignment8_vhd_vec_tst File: Waveform.vwf.vht
 # after#33
 
-# End time: 13:32:41 on Sep 08,2021, Elapsed time: 0:00:02
+# End time: 14:35:57 on Sep 08,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -156,7 +155,7 @@ Reading C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/simulation/qsim/As
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/simulation/qsim/Assignment8_20210908133241.sim.vwf
+Writing the resulting VWF to C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/simulation/qsim/Assignment8_20210908143557.sim.vwf
 
 Finished VCD to VWF conversion.
 

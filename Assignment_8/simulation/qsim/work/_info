@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/simulation/qsim
 Eassignment8
-Z1 w1631122358
+Z1 w1631126154
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 JX^YokbeM8:bL?Pj@;1Jd1
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -25,9 +25,9 @@ V:;X@KYi0dIZB?_@^5A2VT1
 !s100 @o_V=3ff`h@Hbd9WiD_A<0
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1631122359
+Z11 !s110 1631126156
 !i10b 1
-Z12 !s108 1631122359.000000
+Z12 !s108 1631126156.000000
 Z13 !s90 -work|work|Assignment8.vho|
 Z14 !s107 Assignment8.vho|
 !i113 1
@@ -56,7 +56,7 @@ R14
 R15
 R16
 Eassignment8_vhd_vec_tst
-Z17 w1631122356
+Z17 w1631126153
 R5
 R6
 R0

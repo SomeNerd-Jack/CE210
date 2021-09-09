@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Assignment8
-Wed Sep 08 13:32:38 2021
+Wed Sep 08 14:35:54 2021
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Sep 08 13:32:38 2021 ;
+; EDA Netlist Writer Status ; Successful - Wed Sep 08 14:35:54 2021 ;
 ; Revision Name             ; Assignment8                           ;
 ; Top-level Entity Name     ; Assignment8                           ;
 ; Family                    ; Cyclone IV E                          ;
@@ -103,7 +103,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Sep 08 13:32:37 2021
+    Info: Processing started: Wed Sep 08 14:35:53 2021
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/simulation/qsim/ Assignment8 -c Assignment8
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file Assignment8_7_1200mv_85c_slow.vho in folder "C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/simulation/qsim//" for EDA simulation tool
@@ -115,8 +115,8 @@ Info (204019): Generated file Assignment8_7_1200mv_0c_vhd_slow.sdo in folder "C:
 Info (204019): Generated file Assignment8_min_1200mv_0c_vhd_fast.sdo in folder "C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/simulation/qsim//" for EDA simulation tool
 Info (204019): Generated file Assignment8_vhd.sdo in folder "C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4650 megabytes
-    Info: Processing ended: Wed Sep 08 13:32:38 2021
+    Info: Peak virtual memory: 4649 megabytes
+    Info: Processing ended: Wed Sep 08 14:35:54 2021
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

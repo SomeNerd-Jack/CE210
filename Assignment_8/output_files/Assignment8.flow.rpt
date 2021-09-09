@@ -1,5 +1,5 @@
 Flow report for Assignment8
-Wed Sep 08 13:32:38 2021
+Wed Sep 08 14:35:54 2021
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Sep 08 13:32:38 2021       ;
+; Flow Status                        ; Successful - Wed Sep 08 14:35:54 2021       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; Assignment8                                 ;
 ; Top-level Entity Name              ; Assignment8                                 ;
@@ -99,7 +99,11 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4644 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4635 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4650 MB             ; 00:00:01                           ;
-; Total                ; 00:00:41     ; --                      ; --                  ; 00:01:08                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4635 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4644 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4635 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4649 MB             ; 00:00:01                           ;
+; Total                ; 00:00:45     ; --                      ; --                  ; 00:01:12                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -116,6 +120,10 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; DESKTOP-41TP32S  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-41TP32S  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-41TP32S  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-41TP32S  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-41TP32S  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-41TP32S  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-41TP32S  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -126,6 +134,10 @@ quartus_map --read_settings_files=on --write_settings_files=off Assignment8 -c A
 quartus_fit --read_settings_files=off --write_settings_files=off Assignment8 -c Assignment8
 quartus_asm --read_settings_files=off --write_settings_files=off Assignment8 -c Assignment8
 quartus_sta Assignment8 -c Assignment8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Assignment8 -c Assignment8 --vector_source=C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/Waveform.vwf --testbench_file=C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/simulation/qsim/ Assignment8 -c Assignment8
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Assignment8 -c Assignment8 --vector_source=C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/Waveform.vwf --testbench_file=C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/simulation/qsim/ Assignment8 -c Assignment8
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Assignment8 -c Assignment8 --vector_source=C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/Waveform.vwf --testbench_file=C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/simulation/qsim/Waveform.vwf.vht
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/simulation/qsim/ Assignment8 -c Assignment8
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Assignment8 -c Assignment8 --vector_source=C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/Waveform.vwf --testbench_file=C:/Users/somenerd/Documents/GitHub/CE210/Assignment_8/simulation/qsim/Waveform.vwf.vht
